@@ -1,0 +1,16 @@
+{
+  "contract": "exercise-preview-limit/v1",
+  "cases": [
+    { "id": "bytes", "valid": true, "input": 2048, "bytes": 2048 },
+    { "id": "megabytes", "valid": true, "input": "25 MB", "bytes": 26214400 },
+    {
+      "id": "decimal-kilobytes",
+      "valid": true,
+      "input": "1.5 KB",
+      "bytes": 1536
+    },
+    { "id": "zero", "valid": false, "input": 0 },
+    { "id": "unsupported-unit", "valid": false, "input": "2 TB" },
+    { "id": "malformed", "valid": false, "input": "large" }
+  ]
+}

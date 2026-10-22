@@ -1,0 +1,35 @@
+{
+  "contract": "navigation-sorting/v1",
+  "cases": [
+    {
+      "id": "unmatched",
+      "valid": true,
+      "input": ["a", "b"],
+      "result": { "matched": false, "items": ["a", "b"] }
+    },
+    {
+      "id": "reordered",
+      "valid": true,
+      "input": ["a", "b"],
+      "result": { "matched": true, "items": ["b", "a"] }
+    },
+    {
+      "id": "hidden",
+      "valid": true,
+      "input": ["a", "b"],
+      "result": { "matched": true, "items": ["b"] }
+    },
+    {
+      "id": "duplicate",
+      "valid": false,
+      "input": ["a", "b"],
+      "result": { "matched": true, "items": ["a", "a"] }
+    },
+    {
+      "id": "foreign",
+      "valid": false,
+      "input": ["a", "b"],
+      "result": { "matched": true, "items": ["c"] }
+    }
+  ]
+}

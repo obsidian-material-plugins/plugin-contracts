@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obsidian-material-plugins/plugin-contracts/contracts/exercise-manifest/v1/schema.json",
+  "type": "object",
+  "required": ["version"],
+  "properties": {
+    "version": { "const": 1 },
+    "files": {
+      "type": "object",
+      "properties": {
+        "hide-from-preview": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "exclude-from-quartz": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "preview": {
+      "type": "object",
+      "properties": { "ignore-size-limit": { "type": "boolean" } },
+      "additionalProperties": false
+    },
+    "outputs": { "type": "array" },
+    "highlights": { "type": "array" },
+    "annotations": { "type": "array" }
+  },
+  "additionalProperties": false
+}

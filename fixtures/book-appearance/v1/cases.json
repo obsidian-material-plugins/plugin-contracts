@@ -1,0 +1,34 @@
+{
+  "contract": "book-appearance/v1",
+  "cases": [
+    {
+      "id": "portable",
+      "valid": true,
+      "input": { "panel": { "icon": "lucide:book-open", "accent": "#0ea5e9" } }
+    },
+    {
+      "id": "upper-hex",
+      "valid": true,
+      "input": {
+        "panel": { "icon": "lucide:library-big", "accent": "#AABBCC" }
+      }
+    },
+    {
+      "id": "unprefixed-icon",
+      "valid": false,
+      "input": { "panel": { "icon": "book-open", "accent": "#0ea5e9" } }
+    },
+    {
+      "id": "short-hex",
+      "valid": false,
+      "input": { "panel": { "icon": "lucide:book-open", "accent": "#fff" } }
+    },
+    {
+      "id": "css-variable",
+      "valid": false,
+      "input": {
+        "panel": { "icon": "lucide:book-open", "accent": "var(--accent)" }
+      }
+    }
+  ]
+}

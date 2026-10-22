@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obsidian-material-plugins/plugin-contracts/contracts/exercise-fence/v1/schema.json",
+  "type": "object",
+  "required": ["exercise"],
+  "properties": {
+    "exercise": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_][A-Za-z0-9._-]*$"
+    },
+    "layout": { "enum": ["ide", "dropdown"] },
+    "entrypoint": { "$ref": "#/$defs/relativePath" },
+    "word-wrap": { "type": "boolean" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\]+$"
+    }
+  }
+}

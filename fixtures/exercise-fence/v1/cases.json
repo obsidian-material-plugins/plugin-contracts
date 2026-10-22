@@ -1,0 +1,26 @@
+{
+  "contract": "exercise-fence/v1",
+  "cases": [
+    { "id": "minimal", "valid": true, "input": { "exercise": "hello-world" } },
+    {
+      "id": "complete",
+      "valid": true,
+      "input": {
+        "exercise": "_template-1",
+        "layout": "dropdown",
+        "entrypoint": "src/Main.java",
+        "word-wrap": false
+      }
+    },
+    {
+      "id": "traversing-name",
+      "valid": false,
+      "input": { "exercise": "../secret" }
+    },
+    {
+      "id": "traversing-entrypoint",
+      "valid": false,
+      "input": { "exercise": "hello", "entrypoint": "../../secret" }
+    }
+  ]
+}

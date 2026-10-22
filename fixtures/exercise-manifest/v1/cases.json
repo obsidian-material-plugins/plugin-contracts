@@ -1,0 +1,28 @@
+{
+  "contract": "exercise-manifest/v1",
+  "cases": [
+    { "id": "minimal-v1", "valid": true, "input": { "version": 1 } },
+    {
+      "id": "policies",
+      "valid": true,
+      "input": {
+        "version": 1,
+        "files": {
+          "hide-from-preview": ["notes/**"],
+          "exclude-from-quartz": ["solutions/**"]
+        },
+        "preview": { "ignore-size-limit": false }
+      }
+    },
+    { "id": "missing-version", "valid": false, "input": {} },
+    { "id": "forward-version", "valid": false, "input": { "version": 2 } },
+    {
+      "id": "traversing-policy",
+      "valid": false,
+      "input": {
+        "version": 1,
+        "files": { "exclude-from-quartz": ["../../secret"] }
+      }
+    }
+  ]
+}

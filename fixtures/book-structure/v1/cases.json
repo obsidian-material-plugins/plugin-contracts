@@ -1,0 +1,21 @@
+{
+  "contract": "book-structure/v1",
+  "cases": [
+    {
+      "id": "first-level-index",
+      "valid": true,
+      "input": "research/index.md",
+      "book": "research"
+    },
+    {
+      "id": "nested-note",
+      "valid": true,
+      "input": "research/methods/note.md",
+      "book": "research"
+    },
+    { "id": "root-note", "valid": true, "input": "about.md", "book": null },
+    { "id": "traversal", "valid": false, "input": "../research/index.md" },
+    { "id": "backslash", "valid": false, "input": "research\\index.md" },
+    { "id": "double-separator", "valid": false, "input": "research//index.md" }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "catalogVersion": 1,
+  "contracts": [
+    {
+      "id": "book-structure",
+      "kind": "document",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/book-structure/v1/README.md",
+          "fixtures": "fixtures/book-structure/v1/cases.json"
+        }
+      ]
+    },
+    {
+      "id": "book-appearance",
+      "kind": "document",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/book-appearance/v1/README.md",
+          "schema": "contracts/book-appearance/v1/schema.json",
+          "fixtures": "fixtures/book-appearance/v1/cases.json"
+        }
+      ]
+    },
+    {
+      "id": "navigation-sorting",
+      "kind": "runtime-capability",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/navigation-sorting/v1/README.md",
+          "fixtures": "fixtures/navigation-sorting/v1/cases.json"
+        }
+      ]
+    },
+    {
+      "id": "exercise-fence",
+      "kind": "document",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/exercise-fence/v1/README.md",
+          "schema": "contracts/exercise-fence/v1/schema.json",
+          "fixtures": "fixtures/exercise-fence/v1/cases.json"
+        }
+      ]
+    },
+    {
+      "id": "exercise-manifest",
+      "kind": "document",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/exercise-manifest/v1/README.md",
+          "schema": "contracts/exercise-manifest/v1/schema.json",
+          "fixtures": "fixtures/exercise-manifest/v1/cases.json"
+        }
+      ]
+    },
+    {
+      "id": "exercise-preview-limit",
+      "kind": "document",
+      "versions": [
+        {
+          "version": 1,
+          "status": "active",
+          "specification": "contracts/exercise-preview-limit/v1/README.md",
+          "schema": "contracts/exercise-preview-limit/v1/schema.json",
+          "fixtures": "fixtures/exercise-preview-limit/v1/cases.json"
+        }
+      ]
+    }
+  ]
+}
