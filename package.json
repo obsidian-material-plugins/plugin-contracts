@@ -1,6 +1,6 @@
 {
   "name": "@obsidian-material-plugins/plugin-contracts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Versioned specifications and fixtures shared by Obsidian Material Plugins.",
   "type": "module",
   "license": "0BSD",
