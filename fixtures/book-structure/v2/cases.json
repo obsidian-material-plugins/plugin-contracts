@@ -17,6 +17,11 @@
       "input": { "contract": "book-structure/v2", "globalNote": "index.md", "localNotePattern": "notes/index.md" }
     },
     {
+      "id": "repeated-folder-token",
+      "valid": false,
+      "input": { "contract": "book-structure/v2", "globalNote": "index.md", "localNotePattern": "{{folder_name}}-{{folder_name}}.md" }
+    },
+    {
       "id": "non-markdown",
       "valid": false,
       "input": { "contract": "book-structure/v2", "globalNote": "overview.txt", "localNotePattern": "index.md" }

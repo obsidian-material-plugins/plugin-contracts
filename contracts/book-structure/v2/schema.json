@@ -6,7 +6,12 @@
   "properties": {
     "contract": { "const": "book-structure/v2" },
     "globalNote": { "$ref": "#/$defs/noteName" },
-    "localNotePattern": { "$ref": "#/$defs/noteName" }
+    "localNotePattern": {
+      "allOf": [
+        { "$ref": "#/$defs/noteName" },
+        { "pattern": "^(?!.*\\{\\{folder_name\\}\\}.*\\{\\{folder_name\\}\\}).*$" }
+      ]
+    }
   },
   "additionalProperties": false,
   "$defs": {

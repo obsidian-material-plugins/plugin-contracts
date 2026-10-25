@@ -5,6 +5,8 @@
     { "id": "megabytes", "valid": true, "input": "25 MB", "bytes": 26214400 },
     { "id": "decimal-kilobytes", "valid": true, "input": "1.5 KB", "bytes": 1536 },
     { "id": "zero", "valid": false, "input": 0 },
+    { "id": "zero-kilobytes", "valid": false, "input": "0 KB" },
+    { "id": "zero-decimal-megabytes", "valid": false, "input": "0.0 MB" },
     { "id": "unsupported-unit", "valid": false, "input": "2 TB" },
     { "id": "malformed", "valid": false, "input": "large" }
   ]
