@@ -7,9 +7,16 @@
       "versions": [
         {
           "version": 1,
-          "status": "active",
+          "status": "deprecated",
           "specification": "contracts/book-structure/v1/README.md",
           "fixtures": "fixtures/book-structure/v1/cases.json"
+        },
+        {
+          "version": 2,
+          "status": "active",
+          "specification": "contracts/book-structure/v2/README.md",
+          "schema": "contracts/book-structure/v2/schema.json",
+          "fixtures": "fixtures/book-structure/v2/cases.json"
         }
       ]
     },
@@ -19,10 +26,17 @@
       "versions": [
         {
           "version": 1,
-          "status": "active",
+          "status": "deprecated",
           "specification": "contracts/book-appearance/v1/README.md",
           "schema": "contracts/book-appearance/v1/schema.json",
           "fixtures": "fixtures/book-appearance/v1/cases.json"
+        },
+        {
+          "version": 2,
+          "status": "active",
+          "specification": "contracts/book-appearance/v2/README.md",
+          "schema": "contracts/book-appearance/v2/schema.json",
+          "fixtures": "fixtures/book-appearance/v2/cases.json"
         }
       ]
     },
@@ -70,10 +84,17 @@
       "versions": [
         {
           "version": 1,
-          "status": "active",
+          "status": "deprecated",
           "specification": "contracts/exercise-preview-limit/v1/README.md",
           "schema": "contracts/exercise-preview-limit/v1/schema.json",
           "fixtures": "fixtures/exercise-preview-limit/v1/cases.json"
+        },
+        {
+          "version": 2,
+          "status": "active",
+          "specification": "contracts/exercise-preview-limit/v2/README.md",
+          "schema": "contracts/exercise-preview-limit/v2/schema.json",
+          "fixtures": "fixtures/exercise-preview-limit/v2/cases.json"
         }
       ]
     }

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obsidian-material-plugins/plugin-contracts/contracts/exercise-preview-limit/v2/schema.json",
+  "type": "object",
+  "properties": {
+    "exercise-preview-size-limit": {
+      "oneOf": [
+        { "type": "number", "exclusiveMinimum": 0 },
+        {
+          "type": "string",
+          "pattern": "^\\s*\\d+(?:\\.\\d+)?\\s*(?:[Kk][Bb]|[Mm][Bb]|[Gg][Bb])\\s*$"
+        }
+      ]
+    }
+  },
+  "additionalProperties": true
+}

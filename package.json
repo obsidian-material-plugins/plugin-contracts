@@ -14,6 +14,7 @@
     "contracts",
     "fixtures",
     "README.md",
+    "ONBOARDING.md",
     "LICENSE"
   ],
   "exports": {

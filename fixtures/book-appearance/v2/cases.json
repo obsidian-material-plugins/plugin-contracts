@@ -1,0 +1,40 @@
+{
+  "contract": "book-appearance/v2",
+  "cases": [
+    {
+      "id": "canonical-block",
+      "valid": true,
+      "input": { "panel": "icon: lucide:book-open\naccent: \"#0ea5e9\"\n" }
+    },
+    {
+      "id": "reversed-order",
+      "valid": true,
+      "input": { "panel": "accent: '#AABBCC'\nicon: lucide:library-big\n" }
+    },
+    {
+      "id": "legacy-map",
+      "valid": false,
+      "input": { "panel": { "icon": "lucide:book-open", "accent": "#0ea5e9" } }
+    },
+    {
+      "id": "duplicate-key",
+      "valid": false,
+      "input": { "panel": "icon: lucide:book-open\nicon: lucide:terminal\naccent: \"#0ea5e9\"\n" }
+    },
+    {
+      "id": "unsafe-accent",
+      "valid": false,
+      "input": { "panel": "icon: lucide:book-open\naccent: var(--accent)\n" }
+    },
+    {
+      "id": "mismatched-quotes",
+      "valid": false,
+      "input": { "panel": "icon: lucide:book-open\naccent: \"#0ea5e9'\n" }
+    },
+    {
+      "id": "extra-blank-line",
+      "valid": false,
+      "input": { "panel": "icon: lucide:book-open\naccent: \"#0ea5e9\"\n\n" }
+    }
+  ]
+}

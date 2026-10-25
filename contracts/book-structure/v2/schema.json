@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obsidian-material-plugins/plugin-contracts/contracts/book-structure/v2/schema.json",
+  "type": "object",
+  "required": ["contract", "globalNote", "localNotePattern"],
+  "properties": {
+    "contract": { "const": "book-structure/v2" },
+    "globalNote": { "$ref": "#/$defs/noteName" },
+    "localNotePattern": { "$ref": "#/$defs/noteName" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "noteName": {
+      "type": "string",
+      "pattern": "^(?!\\.\\.?\\.md$)(?!.*[ .]\\.md$)[^\\\\/:*?\"<>|\\u0000-\\u001f]+\\.md$"
+    }
+  }
+}

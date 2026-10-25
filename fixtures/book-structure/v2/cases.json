@@ -1,0 +1,30 @@
+{
+  "contract": "book-structure/v2",
+  "cases": [
+    {
+      "id": "index-default",
+      "valid": true,
+      "input": { "contract": "book-structure/v2", "globalNote": "index.md", "localNotePattern": "index.md" }
+    },
+    {
+      "id": "custom-root-and-folder-name",
+      "valid": true,
+      "input": { "contract": "book-structure/v2", "globalNote": "overview.md", "localNotePattern": "{{folder_name}}.md" }
+    },
+    {
+      "id": "nested-path",
+      "valid": false,
+      "input": { "contract": "book-structure/v2", "globalNote": "index.md", "localNotePattern": "notes/index.md" }
+    },
+    {
+      "id": "non-markdown",
+      "valid": false,
+      "input": { "contract": "book-structure/v2", "globalNote": "overview.txt", "localNotePattern": "index.md" }
+    },
+    {
+      "id": "traversal",
+      "valid": false,
+      "input": { "contract": "book-structure/v2", "globalNote": "../index.md", "localNotePattern": "index.md" }
+    }
+  ]
+}
