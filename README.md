@@ -9,12 +9,12 @@ implement any subset and release on their own schedules.
 
 | Contract                 | Current version | Purpose                                                     |
 | ------------------------ | --------------- | ----------------------------------------------------------- |
-| `book-structure`         | `v1`            | First-level book folders and their `index.md` entry points. |
-| `book-appearance`        | `v1`            | Portable `panel.icon` and `panel.accent` frontmatter.       |
+| `book-structure`         | `v2`            | Portable settings-note names and canonical index routes.    |
+| `book-appearance`        | `v2`            | Portable appearance in a `panel` literal block.            |
 | `navigation-sorting`     | `v1`            | Optional runtime ordering capability for Quartz navigation. |
 | `exercise-fence`         | `v1`            | Placement configuration for fenced `exercise` blocks.       |
 | `exercise-manifest`      | `v1`            | `.exercise.yml` project metadata and export policy.         |
-| `exercise-preview-limit` | `v1`            | Root frontmatter setting for preview-size limits.           |
+| `exercise-preview-limit` | `v2`            | Global settings-note property for preview-size limits.      |
 
 `catalog.json` is the machine-readable index. Every entry points to its
 specification and portable fixture corpus.
@@ -33,3 +33,6 @@ should use its own namespace.
 
 Published versions remain available even after deprecation. Consumers can
 therefore upgrade deliberately instead of following a moving specification.
+
+For a step-by-step path from an Obsidian or Quartz template, see
+[Add a compatible plugin](ONBOARDING.md).

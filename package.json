@@ -14,6 +14,7 @@
     "contracts",
     "fixtures",
     "README.md",
+    "ONBOARDING.md",
     "LICENSE"
   ],
   "exports": {
@@ -23,7 +24,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "test": "node scripts/check-catalog.mjs",
+    "test": "node scripts/check-catalog.mjs && node scripts/check-v2-fixtures.mjs",
     "pack:check": "npm pack --dry-run"
   },
   "engines": {

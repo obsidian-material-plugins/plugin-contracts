@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/obsidian-material-plugins/plugin-contracts/contracts/book-appearance/v2/schema.json",
+  "type": "object",
+  "required": [
+    "panel"
+  ],
+  "properties": {
+    "panel": {
+      "type": "string",
+      "pattern": "^(?:icon: lucide:[a-z0-9]+(?:-[a-z0-9]+)*\\naccent: (?:#[0-9a-fA-F]{6}|\"#[0-9a-fA-F]{6}\"|'#[0-9a-fA-F]{6}')|accent: (?:#[0-9a-fA-F]{6}|\"#[0-9a-fA-F]{6}\"|'#[0-9a-fA-F]{6}')\\nicon: lucide:[a-z0-9]+(?:-[a-z0-9]+)*)\\n?$(?![\\s\\S])"
+    }
+  },
+  "additionalProperties": true
+}
