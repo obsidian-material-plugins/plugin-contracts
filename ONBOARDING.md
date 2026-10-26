@@ -1,7 +1,7 @@
 # Add a compatible plugin
 
 The Obsidian and Quartz implementations remain independent. A plugin can use
-these contracts without installing Obsidian to quartz workspace or Root Books
+these contracts without installing Quartz Workspace Sync or Root Books
 Workspace. Start from the appropriate read-only template in the organization's
 `TEMPLATES/` workspace area; copy it to a new repository and follow that
 template's own setup instructions.
